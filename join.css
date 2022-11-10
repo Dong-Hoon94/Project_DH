@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+#container{
+    width: 100%;
+    height: 100vh;
+    
+}
+.join_container{
+   
+ width: 268px;
+ height: 162px;
+ padding-bottom: 20px;
+}
+
+#header {
+    position: relative;
+    overflow: hidden;
+    padding: 32px 0 54px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.img-page img{
+    width: 270px;
+
+}
+
+.int_gender p{
+    margin: 19px 0 8px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#join_text {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%,-50%); 
+    
+}
+.int input{
+    width: 310px;
+    height: 42px;
+    padding: 10px 110px 10px 14px;
+    border: 1px solid gray;
+}
+.address input {
+    width: 155px;
+    height: 40px;
+    border-right:none ;
+}
+
+.address_h .number{
+float: right;
+border-left: none;
+ width: 155px;
+ height: 40px;
+ background-color: white;
+ font-weight: 600;
+ color: black;
+ border: 1px solid gray;
+ 
+
+}
+
+.address .number:hover {
+    background: black;
+    transition: all, 0.4s;
+    color: whitesmoke;
+    border: none;
+   
+}
+
+.addr{
+    display: inline-block;
+    border:1px solid;
+    width:500px;
+    height:300px;
+    margin:5px 0;
+    position:"relative";
+}
+
+#layer{
+    display: none;
+    position: fixed;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.box .sel{
+    text-align: center;
+    width: 90px;
+    height: 42px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+#gender_W ,#gender_M{
+    width: 89px;
+    height: 57px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid gray;
+}
+#gender_M {
+   position: fixed;
+}
+#gender_W{
+    margin-left: 220px;
+}
+
+.gender_btn{
+    width: 90px;
+    height: 57px;
+   border: 2px solid red;
+}
+
+.subit {
+    margin: 50px 0 8px;
+    
+}
+
+.subit .sub_btn {
+    display: block;
+    width: 310px;
+    height: 53px;
+    border: 1px solid gray;
+    background-color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.sub_btn:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s;
+    border: none;
+}
+.join_title{
+    margin: 28px 0 8px;
+    font-size: 15px;
+}
+
+.join_title1{
+    margin: 13px 0 8px;
+    font-size: 15px;
+}
+
+.address_h #sample2_detailAddress  {
+    padding: 100px;
+   
+}
+
+#Gender{
+    padding: 1px;
+}
+.error {
+ color: red;
+} 
+.success {
+    color: green;
+}
+
+.active_btn_M {
+   border: 1px solid blue !important;
+}
+
+.active_btn_W {
+    border: 1px solid red !important;
+}
+
