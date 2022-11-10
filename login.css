@@ -1,0 +1,102 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    padding: 50px;
+    font-weight: 300;
+}
+
+.logon_container {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+
+label {
+   display: block;
+   padding: 5px;
+   width: 332px;
+   height: 43px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ececec;
+}
+input:focus:not(input[type=checkbox]) { /*not 부정선택자 =  스타일을 적용시키지 않을 선택자를 선택
+                                        -> 부정 선택자로 설정하지 않은 요소만 적용 */
+    outline: 1px solid darkcyan;
+}
+
+.checkbox {
+   position: relative;
+   width: 28px;
+   height: 18px;
+   margin: 5px 1px 15px 0px;
+   outline: none;
+}
+img{
+    width: 14px;
+    margin: 0 3px 0 0;
+    vertical-align: top;
+}
+.login_btn {
+    width: 322px;
+    height: 33px;
+    font-weight: 700;
+    color: #ececec;
+    background-color: black;
+    border: none;
+    margin: 15px 0px 10px 4px;
+}
+
+.login_btn:hover {
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: all 0.3s;   
+}
+
+.checkbox label {
+    position: absolute;
+    font-size: 13px;
+    display: block;
+    left: 26px;
+    top: 0;
+}
+
+.loginUtil{
+    height: 35px;
+    padding: 0px 0px 0px 25px;
+}
+
+.btnLogin {
+    text-decoration-line: none;
+    padding: 0px 14px 0 15px;
+    line-height: 25px;
+    color: gray;
+    font-size: 12px;
+}
+
+a {
+    float: left;
+    padding: 0 15px;
+}
+a::after{
+ content: "|";
+ float: right;
+ margin-right: -16px;
+
+}
+a:last-child::after {
+    content: "";
+}
