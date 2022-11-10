@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="join.css">
+    <title>유코스몰 - 유코스 공식몰</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id='header' class="join_container">
+            <div class="img-page">
+                <img src="images/logo.png" class="img">
+            </div>
+        </div>
+
+        <div id="join_text">
+            <div class="join_form">
+                <form>
+                    <h3 class="join_title">
+                        <label> ID</label>
+                    </h3>
+
+                    <span class="int">
+                        <input type="text" id="id" name="id" maxlength="20" placeholder="아이디"> <br>
+                        <span id="id_ma"></span>
+                    </span>
+                    <h3 class="join_title">
+                        <label> Password</label>
+                    </h3>
+                    <span class="int">
+                        <input type="password" id="pw" name="pw" minlength="8" maxlength="20" placeholder="비밀번호">
+                        <br><span id="pw_first"></span>
+                        <h3 class="join_title">
+                            <label> Reconfirm password</label>
+                        </h3>
+                        <span class="int">
+                            <input type="password" id="pw_r" name="pw_r" minlength="8" maxlength="20"
+                                placeholder="비밀번호 재입력">
+                            <br><span id="pw_rd"></span>
+                        </span>
+
+                        <h3 class="join_title">
+                            <label>Name</label>
+                        </h3>
+
+                        <span class="int">
+                            <input type="text" id="username" name="username" maxlength="5" placeholder="성함">
+                            <br><span id="username_rd"></span>
+                        </span>
+
+                        <div>
+                            <h3 class="join_title">
+                                <label>Address</label>
+                            </h3>
+                        </div>
+
+                        <div class="join_title">
+                            <span class="address_h">
+                                <button class="number" type="button" onclick="sample2_execDaumPostcode()">우편번호</button>
+                        </div>
+
+                        <div id="layer">
+                            <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
+                            </div>
+
+                        <div>
+                            <h3 class="join_title1">
+                                <label id="address"></label>
+                            </h3>
+                        </div>
+
+
+                        <div>
+                            <p class="address">
+                                <input type="text" id="sample2_address" name="useraddr" maxlength="5" disabled>
+                            </p>
+
+                            <p class="addr2">
+                                <input type="text" id="sample2_detailAddress" name="username" maxlength="5">
+                                <br><span id="addr1234"></span>
+                            </p>
+                            <input type="text" id="sample2_extraAddress" name="username" maxlength="5">
+
+                        </div>
+
+
+                        <div class="int_gender">
+                            <p>
+                                <label>Gender</label>
+                            </p>
+
+                            <div class="gender_inform">
+                                <button type="button" id="gender_M">Man</button>
+                                <button type="button" id="gender_W">Woman</button>
+                                <br><span id="Gender"></span>
+                            </div>
+                        </div>
+
+                        <div class="subit">
+                            <button type='submit' class="sub_btn">가입하기</button>
+                        </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="validation.js"></script>
+<script src="address.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+
+
+</html>
