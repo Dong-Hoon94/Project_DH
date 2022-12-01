@@ -42,10 +42,9 @@ header>.logo_img {
 }
 
 
-header>.logo_img>img {
+header>.logo_img img {
     width: 100%;
     height: 100%;
-
 }
 
 .main_memu {

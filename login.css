@@ -87,16 +87,16 @@ img{
     font-size: 12px;
 }
 
-a {
+.loginUtil a {
     float: left;
     padding: 0 15px;
 }
-a::after{
+.loginUtil a::after{
  content: "|";
  float: right;
  margin-right: -16px;
 
 }
-a:last-child::after {
+.loginUtil a:last-child::after {
     content: "";
 }

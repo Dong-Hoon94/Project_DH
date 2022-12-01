@@ -7,6 +7,7 @@ let $gender_btn = document.querySelectorAll(".gender_inform button");
 let $gender_inform = document.querySelector(".gender_inform");
 let $Gender = document.querySelector("#Gender");
 
+
 let $gender_M = document.querySelector("#gender_M");
 let $gender_W = document.querySelector("#gender_W");
 
@@ -16,6 +17,7 @@ let userName = $form.username;
 let pw_r = $form.pw_r;
 let pw = $form.pw_first;
 let pw_rd = $form.pw_rd;
+ 
 
 let db = {
   userId: "kane5178",

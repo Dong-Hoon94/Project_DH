@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+text-decoration-line:none;
+color: black;
+}
+
+li {
+    list-style: none;
+}
+.mypage_container {
+    margin: 142px  auto 10px;
+    width: 100%;
+    padding: 60px 5% 60px 5%;
+}
+
+.header_wrap header {
+    top: 0;
+}
+
+.mypage_text {
+text-align: center;
+}
+
+.mypage_text .my_text {
+  font-weight: 300;
+}
+
+.mypage_table {
+    margin-top: 30px;
+    border: 1px solid #ececec; 
+}
+
+.state {
+    padding: 30px 0px 30px;
+}
+
+.state_order li {
+    width: 204px;
+    height: 60px;
+}
+
+.state li:not(:nth-child(1)) {
+    padding-left: 5px;
+    padding-bottom: 20px;
+    border-left: 1px dotted #c9c7ca;
+}
+
+.state li::before {
+   content: '';
+   color: red;
+   width: 100%;
+   height: 1px; 
+}
+.my_order{
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px solid #ececec ;
+}
+
+.my_order li {
+border-left: 1px dotted #ececec;
+
+}
+
+.zero_state {
+display: block;
+text-align: center;
+text-decoration-line:none;
+margin:13px;
+}
+
+.state_order {
+list-style: none;
+display: flex;
+margin: 1px 0 13px;
+justify-content: space-around;
+text-align: center;
+}
+
+.cs{
+display: flex;
+height: 100%;
+border-top: 1px solid #ececec;
+background-color:#f7f7f7cd;
+    
+}
+
+.cs_li {
+width: 33.3%;
+display: block;
+padding: 24px 0;
+border-left:1px solid  #ececec;
+}
+
+.cs .icodot {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    margin: 6px 0 0 12px;
+    background: #52596b;
+    vertical-align: top;
+   
+}
+.cs_li strong {
+    font-weight: normal;
+}
+.cs_li .cs_count {
+    float: right;
+    margin: 0 15px 0 0;
+    font-weight: 700;
+}
+
+
+.state_order li strong a {
+    margin: 1px 0 13px;
+    display: block;
+}
+
+.my_order span {
+    padding: 0 0 0 4px;
+    font-weight: normal;
+    font-size: 11px;
+}
+.my_order em {
+    color: #508bed;
+    font-style: normal;
+  
+}
+
+.list_page{
+    border: 1px solid #ececec;
+    border-top: 0;
+    width: 100%;
+}
+
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid span {
+    padding: 5px;
+  }
+
+.list_page ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list_page ul li {
+    width: calc(100% / 4); /*  CSS 속성의 값으로 계산식을 지정*/
+    border: 1px solid #f7f7f7cd;
+    padding: 30px;
+}
+.list_page h3 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.list_page li span{
+    font-size: 13px;
+     font-weight:300;
+    }
+
+.list_page li:hover {
+    background-color: #f7f7f7cd; 
+}
+
+.list_page .grid:hover {
+    transition: all 0.5s;
+    color: #508bed;
+}
+
+.list_page h3:before{
+display: block;
+content: "";
+width:65px;
+height: 50px;
+margin: 0 auto;
+background: url(https://img.echosting.cafe24.com/skin/base/myshop/sfix_icon_shopMain.png) no-repeat;
+
+}
+.shopMain_order h3:before {
+ background-position: 15px 0px;
+}
+
+.shopMain_profile h3:before {
+    background-position: -90px 8px;
+
+}
+.shopMain_wishlist h3:before {
+    background-position: -90px 8px;
+
+}
+.shopMain_like h3:before {
+    background-position: -288px 4px;
+}
+
+.shopMain_mileage h3:before {
+    background-position: 8px -100px;
+}
+.shopMain_deposits h3:before {
+    background-position: -92px -98px;
+}
+.shopMain_consult h3:before {
+    background-position: -188px -100px;
+}
+.shopMain_coupon h3:before {
+    background-position: -292px -96px;
+}
+.shopMain_board h3:before {
+    background-position: 12px -200px;
+}
+.shopMain_address h3:before {
+    background-position: -102px -194px;
+}
+
+.shopMain_inquiry h3:before {
+    background-position: -200px -200px;
+}
+.shopMain_subscription h3:before {
+    background-position: -292px -200px;
+}

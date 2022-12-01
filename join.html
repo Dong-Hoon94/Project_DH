@@ -5,17 +5,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/452f85e2f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="join.css">
     <title>유코스몰 - 유코스 공식몰</title>
 </head>
 
 <body>
+    <div class="header_wrap">
+        <header class="header">
+            <div class="logo_img">
+                <a href="index.html"><img src="images/logo.png" class="img"></a>
+            </div>
+
+            <div class="main_memu">
+                <ul>
+                    <li class="dropdown">
+                        <a class="dropdown-menu" href="#">ABOUT US</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">BRAND STORY</a></li>
+                            <li><a href="#">LOCATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-menu" href="#">스토어</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">침실</a></li>
+                            <li><a href="#">거실/소파</a></li>
+                            <li><a href="#">주방/식탁</a></li>
+                            <li><a href="#">수납가구</a></li>
+                            <li><a href="#">학생/서재가구</a></li>
+                            <li><a href="#">소품가구</a></li>
+                            <li><a href="#">사무용가구</a></li>
+                            <li><a href="#">인테리어가구</a></li>
+                            <li><a href="#">빠른배송이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-menu" href="#">커뮤니티</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">이용안내 FQQ</a></li>
+                            <li><a href="#">상품 Q&A</a></li>
+                            <li><a href="#">상품 사용후기</a></li>
+                            <li><a href="#">대량문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-menu" href="#">포트폴리오</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">가구</a></li>
+                            <li><a href="#">인테리어</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">이벤트</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mypage_memu">
+                <ul>
+                    <li class="dropdown_member">
+                        <a class="dropdown_member-menu" href="#">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="member_content">
+                            <li><a href="login.html" target="_parent">로그인</a></li>
+                            <li><a href="join.html">회원가입</a></li>
+                            <li><a href="#">장바구니</a></li>
+                            <li><a href="mypage.html">마이페이지</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="shopping">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                    <li class="serach">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
     <div id="container">
-        <div id='header' class="join_container">
+        <!-- <div id='header' class="join_container">
             <div class="img-page">
                 <img src="images/logo.png" class="img">
             </div>
-        </div>
+        </div> -->
 
         <div id="join_text">
             <div class="join_form">
@@ -34,9 +116,11 @@
                     <span class="int">
                         <input type="password" id="pw" name="pw" minlength="8" maxlength="20" placeholder="비밀번호">
                         <br><span id="pw_first"></span>
+
                         <h3 class="join_title">
                             <label> Reconfirm password</label>
                         </h3>
+                        
                         <span class="int">
                             <input type="password" id="pw_r" name="pw_r" minlength="8" maxlength="20"
                                 placeholder="비밀번호 재입력">
@@ -52,46 +136,40 @@
                             <br><span id="username_rd"></span>
                         </span>
 
-                        <div>
                             <h3 class="join_title">
-                                <label>Address</label>
+                            <label>Address</label>
                             </h3>
-                        </div>
 
-                        <div class="join_title">
-                            <span class="address_h">
-                                <button class="number" type="button" onclick="sample2_execDaumPostcode()">우편번호</button>
-                        </div>
-
-                        <div id="layer">
+                        <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
                             <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
                             </div>
+                        <div>
 
                         <div>
-                            <h3 class="join_title1">
-                                <label id="address"></label>
-                            </h3>
-                        </div>
-
-
-                        <div>
+                            <span class="address_h">
+                                <button class="number" type="button" onclick="sample2_execDaumPostcode()">우편번호</button>
+                            </span> 
+                            
                             <p class="address">
-                                <input type="text" id="sample2_address" name="useraddr" maxlength="5" disabled>
+                                <input type="text"  id="sample2_postcode" name="useraddr" disabled>
                             </p>
 
                             <p class="addr2">
-                                <input type="text" id="sample2_detailAddress" name="username" maxlength="5">
-                                <br><span id="addr1234"></span>
+                                    <input type="text" id="sample2_address" style="padding:10px" name="useraddr" disabled>
+                                <span id="addr1234"></span>
                             </p>
-                            <input type="text" id="sample2_extraAddress" name="username" maxlength="5">
 
+                            <p class="addr3">
+                                <input type="text" id="sample2_detailAddress" style="padding:10px" name="useraddr" placeholder="상세 주소">
+                            </p>
                         </div>
+                        
 
 
                         <div class="int_gender">
-                            <p>
+                            <h3 class="join_title">
                                 <label>Gender</label>
-                            </p>
+                            </h3>
 
                             <div class="gender_inform">
                                 <button type="button" id="gender_M">Man</button>
@@ -99,12 +177,10 @@
                                 <br><span id="Gender"></span>
                             </div>
                         </div>
-
+                        
                         <div class="subit">
                             <button type='submit' class="sub_btn">가입하기</button>
                         </div>
-
-
                 </form>
             </div>
 
@@ -112,8 +188,8 @@
     </div>
 </body>
 <script src="validation.js"></script>
-<script src="address.js"></script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="address.js"></script>
 
 
 
